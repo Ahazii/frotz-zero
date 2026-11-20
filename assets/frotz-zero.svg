@@ -1,0 +1,40 @@
+<!-- Original Frotz Zero artwork. SPDX-License-Identifier: CC0-1.0 -->
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="night" x2="0.8" y2="1">
+      <stop stop-color="#192f43"/><stop offset="1" stop-color="#091421"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop stop-color="#eab968" stop-opacity=".2"/><stop offset="1" stop-color="#eab968" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="pages" x2="0" y2="1">
+      <stop stop-color="#fff4d9"/><stop offset="1" stop-color="#e4d5b2"/>
+    </linearGradient>
+    <linearGradient id="teal" x2="0" y2="1">
+      <stop stop-color="#89e6cf"/><stop offset="1" stop-color="#3ab49e"/>
+    </linearGradient>
+  </defs>
+  <g id="background">
+    <path fill="url(#night)" d="M0 0h256v256H0z"/>
+    <circle cx="128" cy="94" r="115" fill="url(#glow)"/>
+    <path d="M20 206h30m156 0h30M31 218h25m144 0h25" stroke="#284353" stroke-width="2"/>
+  </g>
+  <g stroke="#122c3b" stroke-linejoin="round" stroke-linecap="round">
+    <!-- The book opens into a lantern-lit adventure. -->
+    <path d="M28 130Q83 118 128 145Q173 118 228 130V216Q173 206 128 230Q83 206 28 216Z" fill="#218d80" stroke-width="7"/>
+    <path d="M34 126Q83 119 128 145V218Q83 194 34 204Z" fill="url(#pages)" stroke-width="6"/>
+    <path d="M128 145Q173 119 222 126V204Q173 194 128 218Z" fill="url(#teal)" stroke-width="6"/>
+    <path d="M53 147l16 13-16 12m29 1h15" fill="none" stroke-width="6"/>
+    <path d="M157 153q20-7 43-7m-43 22q20-7 43-7m-43 22q13-5 28-6" fill="none" stroke="#236f69" stroke-width="4"/>
+    <!-- A simple silhouette stays recognisable on a small launcher tile. -->
+    <path d="M115 48V39a13 13 0 0 1 26 0v9" fill="none" stroke="#e6b96e" stroke-width="7"/>
+    <path d="M103 63h50l-7 51h-36Z" fill="#ffd98b" stroke-width="6"/>
+    <path d="M108 63l6 47m34-47-6 47" fill="none" stroke="#ac7638" stroke-width="4"/>
+    <path d="M128 76c-3 12-13 18-9 26 4 10 19 6 19-3 0-7-5-9-5-13-2 3-3 4-3 4z" fill="#fff9df" stroke="none"/>
+    <path d="M102 62l9-13h34l9 13zm6 53h40l6 10h-52Z" fill="#e6b96e" stroke-width="5"/>
+  </g>
+  <g fill="#e6b96e">
+    <path d="M67 65l3 9 9 3-9 3-3 9-3-9-9-3 9-3zm120 29 2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/>
+    <circle cx="191" cy="53" r="3"/>
+  </g>
+</svg>

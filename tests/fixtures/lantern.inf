@@ -1,0 +1,58 @@
+! SPDX-License-Identifier: CC0-1.0
+! Original Frotz Zero test/demo fixture. No commercial story content.
+Release 1;
+Serial "261119";
+Constant Story "The Lantern Room";
+Constant Headline "^A Frotz Zero demonstration^";
+Global location;
+Global score=0;
+Global turns=0;
+Object Room "Lantern Room";
+Array input -> 160;
+Array parse -> 100;
+[ Main k result i j;
+  location=Room;
+  input->0=120; parse->0=12;
+  print "^THE LANTERN ROOM^An original, freely shareable demo.^";
+  print "You stand in a quiet room. A brass lantern rests beside an open book.^";
+  print "Commands: LOOK, NORTH, SOUTH, SAVE, RESTORE, QUIT.^";
+  while(true){
+    print "^>";
+    #Iftrue #version_number >= 5;
+    input->1=0;
+    @aread input parse -> result;
+    k=input->2;
+    #Ifnot;
+    @sread input parse;
+    k=input->1;
+    #Endif;
+    if(k=='q'){print "^Your next adventure awaits.^";quit;}
+    ! Hidden regression command: type ahead while the VM is busy, then SAVE.
+    if(k=='d'){for(i=0:i<500:i++)for(j=0:j<10000:j++)result=j;k='s';}
+    if(k=='s'){
+      #Iftrue #version_number >= 5;
+      @save -> result;
+      #Ifnot;
+      save Saved;
+      result=0; jump SaveDone;
+      .Saved;result=1;
+      .SaveDone;
+      #Endif;
+      print "^Save result: ",result,".^";
+    }else if(k=='r'){
+      #Iftrue #version_number >= 5;
+      @restore -> result;
+      #Ifnot;
+      restore Restored;
+      .Restored;
+      #Endif;
+      print "^Restore returned.^";
+    }else{
+      turns++;
+      if(k=='n'){score++;print "^You step into the garden. Stars shine above the wall.^";}
+      else if(k=='l')print "^The lantern glows softly. The open book invites another adventure.^";
+      else print "^The room is peaceful. Try LOOK or NORTH.^";
+      print "Turns: ",turns,". Score: ",score,".^";
+    }
+  }
+];

@@ -1,0 +1,41 @@
+{
+  "app_name": "Frotz Zero",
+  "package_name": "frotz-zero",
+  "bin_name": "frotz-zero",
+  "version": "0.8.1-1",
+  "description": "Z-machine adventures and an optional online library for Cardputer Zero",
+  "store": {
+    "summary": "Play Z-machine adventures with saves, readable text and an online library.",
+    "description": "A graphical Frotz frontend for v3-v8 Z-machine adventures on Cardputer Zero. Home shows Continue with the last played title, Library, Downloads, Settings, Help and Exit. Story pages offer covers, summaries, play/save actions and confirmed deletion that keeps saved games and shared media. All four arrows and visible number shortcuts navigate menus. Ctrl+V offers Reader, Fit Screen, Fill Screen, Fit Width, Actual Pixels, Reading Zoom, Frame + Text Zoom and Automatic. Ctrl+U/D changes size; Ctrl+P/N recalls commands. Reader includes untimed opening title pauses and keeps your place during resizing. Automatic is the default for every supported V3-V8 story. It wraps text at the chosen size, including timed prompts; Tab shows the original artwork, maps and status without advancing the game. Existing stories switch once, and later manual choices persist. Continue retains the readable page and text/original-view selection. Framed zoom fills the screen with a V6 border while enlarging its main text window at untimed command prompts; original wide lines may need panning. Download selected stories from the Infocom catalogue or IF Archive, including supported ZIP bundles. Notes are cached offline; manual links have QR codes. Includes named-save Load, Rename and confirmed Delete with automatic Continue protected, Quetzal saves, history, scrollback, mute/volume, dark/light themes, offline credits and Continue at supported untimed v3-v5/v7/v8 prompts. V6 automatic resume is unavailable; use story SAVE/RESTORE. No commercial stories or covers are included. Screenshots use original CC0 fixtures.",
+    "categories": [
+      "Games",
+      "Emulators"
+    ],
+    "screenshots": [
+      "store/screenshots/home.png",
+      "store/screenshots/library.png",
+      "store/screenshots/story.png",
+      "store/screenshots/lantern.png",
+      "store/screenshots/settings-light.png",
+      "store/screenshots/online-release.png"
+    ],
+    "icon": "assets/frotz-zero.png",
+    "license": "GPL-3.0-or-later",
+    "source_repo": "https://github.com/Ahazii/frotz-zero",
+    "author": {
+      "github": "Ahazii",
+      "display_name": "Ahazi",
+      "email": "jbanner@btinternet.com"
+    },
+    "share_code": "FRTZ",
+    "permissions": {
+      "camera": false,
+      "microphone": false,
+      "imu": false,
+      "network": true,
+      "additional_hardware": false,
+      "background_service": false,
+      "external_display": false
+    }
+  }
+}

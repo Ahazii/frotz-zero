@@ -1,0 +1,15 @@
+wait 300
+capture local/demo-resume.png
+key Home
+key Delete
+key Delete
+key Delete
+key Delete
+key Delete
+text look
+key Return
+wait 200
+key Space
+wait 200
+capture local/demo-resume-look.png
+quit

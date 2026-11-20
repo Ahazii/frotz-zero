@@ -1,0 +1,12 @@
+wait 200
+text north
+key Return
+wait 200
+text save
+key Return
+wait 300
+text testslot
+key Return
+wait 300
+capture local/named-save.png
+quit

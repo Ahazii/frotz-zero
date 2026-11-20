@@ -1,0 +1,27 @@
+! SPDX-License-Identifier: CC0-1.0
+! Original V6 frame with independently positioned, scrolling text window.
+Release 1;
+Serial "261120";
+Array input -> 160;
+Array parse -> 100;
+[ Main result;
+  @erase_window -1;
+  @move_window 7 1 1;
+  @window_size 7 400 640;
+  @set_window 7;
+  @set_colour 9 6;
+  @erase_window 7;
+  @set_cursor 8 80;
+  print "THE FRAME REMAINS FIXED WHILE TEXT IS ENLARGED";
+  @move_window 0 61 41;
+  @window_size 0 300 560;
+  @set_window 0;
+  @set_colour 2 9;
+  @erase_window 0;
+  @set_margins 8 8;
+  print "THE FRAMED LIBRARY^";
+  print "This long line crosses the main text area. The blue frame should remain visible at every reading size. Enlarging this text must not enlarge the frame or change the story's window geometry.^";
+  print "The original layout includes this second paragraph, and you can pan it with the printed arrow letters while holding Ctrl. Typing brings the command prompt back into view.^";
+  input->0=120;parse->0=12;
+  while(true){print "^>";input->1=0;@aread input parse -> result;if(input->2=='q')quit;print "^Your command was received.^";}
+];

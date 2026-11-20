@@ -1,0 +1,39 @@
+! SPDX-License-Identifier: CC0-1.0
+! Original artwork/text/window-switching regression; no commercial content.
+Release 1;
+Serial "261120";
+Array input -> 160;
+Array parse -> 100;
+[ Timeout; rtrue; ];
+[ Picture;
+  @erase_window -1;
+  @set_window 0;
+  @draw_picture 1 100 160;
+];
+[ Main key result;
+  Picture();
+  @read_char 1 -> key;
+  @erase_window -1;
+  @move_window 2 1 1;
+  @window_size 2 400 640;
+  @set_window 2;
+  print "THE ADAPTIVE OBSERVATORY^Would you like to begin? Press Y or N.^";
+  @read_char 1 -> key;
+  print "Answer code: ",key,".^";
+  @set_window 0;
+  print "A readable account begins here. This long passage is deliberately wider than the small display. Every sentence must wrap at the selected size, without moving the picture or changing the original window geometry. The room contains a telescope, a star chart, a brass key and a welcoming chair.^";
+  print "Another paragraph ensures the reader can turn pages before entering a command. Artwork stays available with Tab, and returning from it must preserve the current page and the draft command.^";
+  input->0=120;parse->0=12;
+  while(true){
+    print "^>";input->1=0;@aread input parse -> result;
+    if(input->2=='q')quit;
+    if(input->2=='a'){
+      Picture();@read_char 1 -> key;
+      print "Returned from artwork.^";
+    }else if(input->2=='t'){
+      print "Timed text remains readable while the story timer runs.^";
+      @read_char 1 20 Timeout -> key;
+      print "Timer result: ",key,".^";
+    }else print "Command received once.^";
+  }
+];

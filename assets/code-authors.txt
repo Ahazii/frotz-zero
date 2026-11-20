@@ -1,0 +1,7 @@
+Frotz reference: Stefan Jokisch
+Unix Frotz: Galen Hazelwood
+Frotz maintainer: David Griffith
+Frotz: Alembic Petrofsky, Jim Dunleavy
+Windows renderer lineage: David Kinder
+QR Code generator: Project Nayuki
+JSON for Modern C++: Niels Lohmann

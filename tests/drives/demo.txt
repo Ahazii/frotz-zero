@@ -1,0 +1,17 @@
+wait 300
+capture local/demo-start.png
+text look
+key Return
+wait 300
+key Space
+wait 200
+capture local/demo-look.png
+text north
+key Return
+wait 300
+key Space
+wait 200
+text draft
+wait 100
+capture local/demo-draft.png
+quit

@@ -1,0 +1,8 @@
+wait 900
+capture local/graphics.png
+text a
+wait 700
+capture local/graphics-callback.png
+text q
+wait 200
+quit

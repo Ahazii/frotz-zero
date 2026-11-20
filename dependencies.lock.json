@@ -1,0 +1,45 @@
+{
+  "frotz": {
+    "url": "https://gitlab.com/DavidGriffith/frotz.git",
+    "commit": "042d7bcadc1e2a8090cf737c841d8b7fc14b6eff",
+    "license": "GPL-2.0-or-later"
+  },
+  "template": {
+    "url": "https://github.com/CardputerZero/Template.git",
+    "commit": "477fa6d217b683e3084c361a757f03dc8ca9f753",
+    "license": "MIT"
+  },
+  "appbuilder": {
+    "url": "https://github.com/CardputerZero/AppBuilder.git",
+    "commit": "042356c579d728d684eccb68ed9f8669a32822bc",
+    "license": "MIT"
+  },
+  "launcher": {
+    "url": "https://github.com/CardputerZero/launcher.git",
+    "commit": "fd71a2dc2e30737cadebd47fb0a2ba68406ecfb8"
+  },
+  "documentation": {
+    "url": "https://github.com/CardputerZero/cardputerzero.github.io.git",
+    "commit": "d444bd1395929e4048b881c8a8de93346b84e56f"
+  },
+  "registry_inspected": {
+    "url": "https://github.com/CardputerZero/packages.git",
+    "commit": "3d625e1e85954f650ee43222b72f575667559bc6",
+    "date": "2026-11-19",
+    "frotz_zero_found": false
+  },
+  "sdk": {
+    "url": "https://github.com/CardputerZero/M5CardputerZero-UserDemo/releases/download/v0.0.4/sdk_bsp.tar.gz",
+    "sha256": "e51b6eb803ed08f450e459efbfe62dd0341440846f3be9d01da861fe6cfdebb0",
+    "release": "v0.0.4"
+  },
+  "qrcodegen": {
+    "url": "https://github.com/nayuki/QR-Code-generator",
+    "commit": "9a217d443937f60cc56c1458c39a211d7f2d3af5",
+    "license": "MIT",
+    "files": {
+      "qrcodegen.c": "6a2b9cc65176f2345dde260c74b6d352627e8a0a6385d086ae0e9c5d0913c70c",
+      "qrcodegen.h": "9eb73b8ba0037c86a25979385fd6d21fbfbb89e56853d05ccdcb2d2bb8e00da3"
+    }
+  }
+}

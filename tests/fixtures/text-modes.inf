@@ -1,0 +1,26 @@
+! SPDX-License-Identifier: CC0-1.0
+! Original non-V6 upper-panel, character-menu, font3 and timer fixture.
+Release 1;
+Serial "261120";
+Array input -> 160;
+Array parse -> 100;
+[ Timeout; rtrue; ];
+[ Main key font result;
+  @split_window 8;
+  @set_window 1;
+  @set_cursor 1 1;print "STATUS HEADER";
+  @set_cursor 3 1;
+  print "THE TEXT OBSERVATORY";
+  @set_cursor 4 1;
+  print "Choose Y or N. This panel should wrap at your preferred reading size.";
+  @set_cursor 7 1;
+  @set_font 3 -> font;print "ABCD";@set_font 1 -> font;
+  @read_char 1 -> key;
+  @erase_window -1;@set_window 0;
+  print "Menu answer: ",key,".^";
+  print "An ordinary text game can also have a timed question. Its words stay readable while its original timer runs.^";
+  @read_char 1 20 Timeout -> key;
+  print "Timer result: ",key,".^";
+  input->0=120;parse->0=12;
+  while(true){print "^>";input->1=0;@aread input parse -> result;if(input->2=='q')quit;print "One command.^";}
+];

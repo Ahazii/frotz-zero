@@ -1,0 +1,30 @@
+! SPDX-License-Identifier: CC0-1.0
+! Original upper-window title and untimed introduction regression fixture.
+Release 1;
+Serial "261120";
+Global location;
+Global score;
+Global turns;
+Object Room "The Observatory";
+Array input -> 160;
+Array parse -> 100;
+[ Main key;
+  location=Room;input->0=120;parse->0=12;
+  @split_window 12;
+  @set_window 1;
+  @set_cursor 1 1;
+  print "STATUS MUST STAY OUT OF READER";
+  @set_cursor 4 4;
+  print "THE OBSERVATORY";
+  @set_cursor 6 4;
+  print "A journey under distant stars";
+  @set_cursor 8 4;
+  print "Before the adventure, take time to read.";
+  @set_window 0;
+  print "^This is the opening introduction. Every word should remain available while you choose a comfortable reading size. Nothing begins until you finish reading and press a key.^";
+  print "^Press a key to begin.^";
+  @read_char 1 -> key;
+  @erase_window -1;
+  print "^FIRST STORY PARAGRAPH: The observatory doors open.^";
+  while(true){print "^>";@sread input parse;if(input->1=='q')quit;turns++;print "^Turns: ",turns,".^";}
+];

@@ -1,0 +1,53 @@
+! SPDX-License-Identifier: CC0-1.0
+! Original v6 graphics/window/font/pointer/timer/audio test.
+Release 1;
+Serial "261119";
+Global callbacks=0;
+Array dims --> 2;
+Array mouse --> 4;
+[ Finished; callbacks++; rtrue; ];
+[ Timeout; rtrue; ];
+[ Main key result;
+  @erase_window -1;
+  @window_size 0 400 640;
+  @set_cursor 1 1;
+  print "FROTZ ZERO - V6 RESOURCE TEST^";
+  @picture_data 1 dims ?HasPicture;
+  print "Picture missing.^";
+  jump TextTest;
+  .HasPicture;
+  @draw_picture 1 40 40;
+  @set_cursor 150 1;
+  print "PNG resource drawn. ";
+  .TextTest;
+  @set_text_style 2;
+  print "Bold ";
+  @set_text_style 4;
+  print "Emphasis ";
+  @set_text_style 0;
+  print "Normal^";
+  @move_window 1 310 1;
+  @window_size 1 48 640;
+  @set_window 1;
+  @set_colour 2 7;
+  @erase_window 1;
+  @set_font 3 -> result;
+  print "ABCD";
+  @set_font 1 -> result;
+  @set_colour 1 1;
+  @set_window 0;
+  @mouse_window -1;
+  @sound_effect 3 2 8 Finished;
+  print "AIFF fixture playing. Press a key after the tone.^";
+  @read_char 1 -> key;
+  print "^Sound callbacks: ",callbacks,". Key: ",key,".^";
+  print "Timed character read (0.3 seconds): ";
+  @read_char 1 3 Timeout -> result;
+  print result,".^";
+  print "Press Q to finish, or another key to inspect pointer codes.^";
+  while(true){@read_char 1 -> key;if(key=='q')quit;
+    if(key=='s'){@save -> result;print "Save result: ",result,".^";}
+    else if(key=='r'){@restore -> result;print "Restore result: ",result,".^";}
+    else {print "Key: ",key,".";if(key==254||key==253){@read_mouse mouse;print " Pointer: ",mouse-->1,",",mouse-->0,".";}new_line;}
+  }
+];

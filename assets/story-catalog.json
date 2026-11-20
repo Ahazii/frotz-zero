@@ -1,0 +1,686 @@
+{
+  "schema": 1,
+  "description": "Header-matched story identities and original spoiler-free summaries. No story code or transcripts.",
+  "stories": [
+    {
+      "version": 4,
+      "release": 77,
+      "serial": "850814",
+      "checksum": "5031",
+      "title": "A Mind Forever Voyaging",
+      "edition": "Adventure",
+      "summary": "Explore simulated futures as PRISM, a sentient computer investigating how a proposed political programme changes everyday life.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 6,
+      "release": 63,
+      "serial": "890622",
+      "checksum": "45eb",
+      "title": "Arthur: The Quest for Excalibur",
+      "edition": "Adventure",
+      "summary": "Become the young Arthur, explore a magical Britain and prove yourself worthy of the sword and the throne.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 3,
+      "release": 97,
+      "serial": "851218",
+      "checksum": "78ae",
+      "title": "Ballyhoo",
+      "edition": "Adventure",
+      "summary": "Stay behind after a circus performance and investigate a disappearance among performers with secrets of their own.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 5,
+      "release": 57,
+      "serial": "871221",
+      "checksum": "c5ad",
+      "title": "Beyond Zork: The Coconut of Quendor",
+      "edition": "Adventure",
+      "summary": "Explore a changing fantasy landscape, develop your character and seek a powerful relic in a mixture of adventure and role-playing.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 4,
+      "release": 116,
+      "serial": "870602",
+      "checksum": "fc65",
+      "title": "Bureaucracy",
+      "edition": "Adventure",
+      "summary": "A change of address spirals into absurd obstacles, obstructive institutions and escalating frustration in this comic adventure.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 3,
+      "release": 23,
+      "serial": "840809",
+      "checksum": "a5a0",
+      "title": "Cutthroats",
+      "edition": "Adventure",
+      "summary": "Join a dangerous salvage expedition, dive for sunken treasure and decide whom to trust above and below the water.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 3,
+      "release": 27,
+      "serial": "831005",
+      "checksum": "54fc",
+      "title": "Deadline",
+      "edition": "Adventure",
+      "summary": "Investigate a suspicious death at a country estate. Question the household, follow changing events and assemble evidence before time runs out.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 3,
+      "release": 24,
+      "serial": "851118",
+      "checksum": "fc8f",
+      "title": "Enchanter",
+      "edition": "Adventure",
+      "summary": "A novice magician must face a dangerous sorcerer, learning spells and using an expanding spellbook to solve magical problems.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 3,
+      "release": 5,
+      "serial": "870612",
+      "checksum": "4769",
+      "title": "Generic",
+      "edition": "Development template",
+      "summary": "A small game-development template containing a parser, sample rooms and objects. This is development material rather than a finished adventure.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 3,
+      "release": 59,
+      "serial": "851108",
+      "checksum": "7378",
+      "title": "The Hitchhiker's Guide to the Galaxy",
+      "edition": "Adventure",
+      "summary": "Join Arthur Dent for an absurd journey through space after an ordinary morning takes a very unfortunate turn.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 3,
+      "release": 235,
+      "serial": "861118",
+      "checksum": "69db",
+      "title": "Hollywood Hijinx",
+      "edition": "Gamma build",
+      "summary": "Explore an eccentric movie producer's mansion and its elaborate puzzles while trying to claim a most unusual inheritance.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 3,
+      "release": 10,
+      "serial": "840826",
+      "checksum": "f148",
+      "title": "Zork experiment (Tomas Bok)",
+      "edition": "Experimental build",
+      "summary": "This build is a heavily modified Zork experiment grouped with the Hypochondriac files. It is not the later Hypochondriac game.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 3,
+      "release": 22,
+      "serial": "840522",
+      "checksum": "e176",
+      "title": "Infidel",
+      "edition": "Macintosh edition",
+      "summary": "An abandoned expedition leaves you searching the Egyptian desert for a hidden pyramid and the treasures within.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 6,
+      "release": 79,
+      "serial": "890627",
+      "checksum": "ff04",
+      "title": "Journey",
+      "edition": "Adventure",
+      "summary": "Guide a party of travellers through a threatened fantasy world, choosing actions and managing the companions' different talents.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 3,
+      "release": 59,
+      "serial": "000001",
+      "checksum": "d070",
+      "title": "Leather Goddesses of Phobos",
+      "edition": "Adventure",
+      "summary": "Escape alien captivity and travel between strange worlds in a comic science-fiction adventure with selectable levels of adult humour.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 3,
+      "release": 219,
+      "serial": "870912",
+      "checksum": "747a",
+      "title": "The Lurking Horror",
+      "edition": "Adventure",
+      "summary": "A late-night visit to a university computer room becomes an investigation of disturbing events beneath the campus.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 3,
+      "release": 34,
+      "serial": "871124",
+      "checksum": "d870",
+      "title": "Mini-Zork I",
+      "edition": "Abridged edition",
+      "summary": "Explore a compact adaptation of Zork's underground world, solving puzzles and searching for treasures in a shortened adventure.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 3,
+      "release": 9,
+      "serial": "861022",
+      "checksum": "1d20",
+      "title": "Moonmist",
+      "edition": "Adventure",
+      "summary": "Visit a Cornish castle, investigate a haunting and untangle the secrets of its inhabitants in a mystery with several variations.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 4,
+      "release": 19,
+      "serial": "870722",
+      "checksum": "4986",
+      "title": "Nord and Bert Couldn't Make Head or Tail of It",
+      "edition": "Adventure",
+      "summary": "Solve a collection of surreal situations by playing with puns, idioms and the literal meanings of familiar expressions.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 3,
+      "release": 37,
+      "serial": "851003",
+      "checksum": "02d6",
+      "title": "Planetfall",
+      "edition": "Adventure",
+      "summary": "A shipboard disaster strands a low-ranking space sailor on an unfamiliar planet, where a friendly robot offers unexpected companionship.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 5,
+      "release": 15,
+      "serial": "880512",
+      "checksum": "8201",
+      "title": "The Restaurant at the End of the Universe",
+      "edition": "Unfinished prototype",
+      "summary": "An incomplete, unreleased follow-up to The Hitchhiker's Guide to the Galaxy. Expect prototype content rather than a complete adventure.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 3,
+      "release": 53,
+      "serial": "850407",
+      "checksum": "7f9c",
+      "title": "Infocom Sampler",
+      "edition": "Four-game sampler",
+      "summary": "A tutorial and short samples from Zork I, Planetfall, Infidel and The Witness. These are excerpts, not four complete games.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 3,
+      "release": 16,
+      "serial": "850603",
+      "checksum": "5890",
+      "title": "Seastalker",
+      "edition": "Adventure",
+      "summary": "Pilot a small submarine, investigate a threat to an underwater research station and uncover a mystery beneath the sea.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 5,
+      "release": 22,
+      "serial": "880112",
+      "checksum": "cb96",
+      "title": "Sherlock: The Riddle of the Crown Jewels",
+      "edition": "Adventure",
+      "summary": "Assist Sherlock Holmes as Dr Watson in a London investigation involving missing royal jewels and a series of riddles.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 6,
+      "release": 321,
+      "serial": "890629",
+      "checksum": "46db",
+      "title": "James Clavell's Shogun",
+      "edition": "Adventure",
+      "summary": "Follow an English navigator drawn into the rivalries and unfamiliar customs of feudal Japan in an adaptation of the novel.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 3,
+      "release": 15,
+      "serial": "851108",
+      "checksum": "28e3",
+      "title": "Sorcerer",
+      "edition": "Adventure",
+      "summary": "Search for a missing master magician, collecting spells and facing strange hazards in the second Enchanter adventure.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 3,
+      "release": 86,
+      "serial": "860829",
+      "checksum": "1375",
+      "title": "Spellbreaker",
+      "edition": "Adventure",
+      "summary": "Investigate a crisis in magic itself, travelling between unusual places and solving the final challenges of the Enchanter trilogy.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 3,
+      "release": 17,
+      "serial": "      ",
+      "checksum": "e34b",
+      "title": "Starcross",
+      "edition": "Early release",
+      "summary": "A space prospector encounters an enormous alien vessel. Explore its habitats and learn how its mysterious machinery works.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 3,
+      "release": 87,
+      "serial": "870326",
+      "checksum": "71ae",
+      "title": "Stationfall",
+      "edition": "Gamma build",
+      "summary": "An apparently routine space-station errand turns dangerous. Reunite with Floyd and investigate what has happened to the crew.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 3,
+      "release": 14,
+      "serial": "000000",
+      "checksum": "d0ec",
+      "title": "Suspect",
+      "edition": "Adventure",
+      "summary": "A costume party becomes a murder investigation, and you are under suspicion. Observe the guests and establish what really happened.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 3,
+      "release": 7,
+      "serial": "830419",
+      "checksum": "947b",
+      "title": "Suspended",
+      "edition": "Adventure",
+      "summary": "Direct robots with different senses and abilities to repair a failing planetary system while your own body remains immobilised.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 4,
+      "release": 12,
+      "serial": "860926",
+      "checksum": "16ab",
+      "title": "Trinity",
+      "edition": "Adventure",
+      "summary": "A London holiday gives way to a surreal journey through places connected with nuclear history, linked by a strange central world.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 3,
+      "release": 68,
+      "serial": "850501",
+      "checksum": "81a5",
+      "title": "Wishbringer",
+      "edition": "Adventure",
+      "summary": "A simple postal delivery becomes a rescue mission in a transformed town, with a mysterious stone offering limited magical help.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 3,
+      "release": 22,
+      "serial": "840924",
+      "checksum": "d5b7",
+      "title": "The Witness",
+      "edition": "Adventure",
+      "summary": "Visit a wealthy businessman in 1930s California, witness a crime and investigate the people and evidence surrounding it.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 6,
+      "release": 13,
+      "serial": "890619",
+      "checksum": "4eca",
+      "title": "ZipTest",
+      "edition": "Interpreter test",
+      "summary": "An interpreter regression suite for version 6 Z-code. It exercises machine behaviour rather than providing a conventional adventure.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 6,
+      "release": 387,
+      "serial": "890612",
+      "checksum": "3d30",
+      "title": "Zork Zero: The Revenge of Megaboz",
+      "edition": "Adventure",
+      "summary": "Explore the Great Underground Empire before the original Zork, tackling a jester's challenges and a far-reaching curse.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 3,
+      "release": 88,
+      "serial": "840726",
+      "checksum": "a129",
+      "title": "Zork I: The Great Underground Empire",
+      "edition": "Adventure",
+      "summary": "Enter the world beneath a white house, discover an underground empire and solve puzzles while collecting its treasures.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 3,
+      "release": 48,
+      "serial": "840904",
+      "checksum": "d899",
+      "title": "Zork II: The Wizard of Frobozz",
+      "edition": "Adventure",
+      "summary": "Continue deeper into the Great Underground Empire, where a capricious wizard and strange mechanisms obstruct your exploration.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 3,
+      "release": 17,
+      "serial": "840727",
+      "checksum": "2e7a",
+      "title": "Zork III: The Dungeon Master",
+      "edition": "Adventure",
+      "summary": "Explore the final regions of the underground empire and face tests of judgement on the path to the Dungeon Master.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 3,
+      "release": 1,
+      "serial": "261119",
+      "checksum": "3a1f",
+      "title": "The Lantern Room",
+      "edition": "CC0 demonstration",
+      "summary": "An original miniature adventure for trying movement, portable saves and Continue. All content is CC0.",
+      "source": "tests/fixtures/lantern.inf"
+    },
+    {
+      "version": 4,
+      "release": 1,
+      "serial": "261119",
+      "checksum": "1196",
+      "title": "The Lantern Room",
+      "edition": "CC0 demonstration",
+      "summary": "An original miniature adventure for trying movement, portable saves and Continue. All content is CC0.",
+      "source": "tests/fixtures/lantern.inf"
+    },
+    {
+      "version": 5,
+      "release": 1,
+      "serial": "261119",
+      "checksum": "e709",
+      "title": "The Lantern Room",
+      "edition": "CC0 demonstration",
+      "summary": "An original miniature adventure for trying movement, portable saves and Continue. All content is CC0.",
+      "source": "tests/fixtures/lantern.inf"
+    },
+    {
+      "version": 6,
+      "release": 1,
+      "serial": "261119",
+      "checksum": "f7bc",
+      "title": "Graphics and Sound Lab",
+      "edition": "CC0 demonstration",
+      "summary": "An original CC0 test of pictures, window layouts, character graphics, sound and timed input.",
+      "source": "tests/fixtures/graphics.inf"
+    },
+    {
+      "version": 5,
+      "release": 1,
+      "serial": "261120",
+      "checksum": "ba09",
+      "title": "Speaker Check",
+      "edition": "CC0 demonstration",
+      "summary": "An original CC0 speaker check. Press P for three tones, use the app menu to test Mute, and Q to finish.",
+      "source": "tests/fixtures/audio.inf"
+    },
+    {
+      "version": 6,
+      "release": 1,
+      "serial": "890320",
+      "checksum": "a95f",
+      "title": "The Abyss",
+      "edition": "Unfinished prototype",
+      "summary": "Explore a surviving fragment of Bob Bates' planned adventure based on the underwater film. This is an incomplete project, not a finished game.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 6,
+      "release": 74,
+      "serial": "890714",
+      "checksum": "d526",
+      "title": "Arthur: The Quest for Excalibur",
+      "edition": "Adventure",
+      "summary": "Become the young Arthur, explore a magical Britain and prove yourself worthy of the sword and the throne.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 5,
+      "release": 9,
+      "serial": "871008",
+      "checksum": "2b37",
+      "title": "Border Zone",
+      "edition": "Adventure",
+      "summary": "Follow three linked viewpoints in a tense Cold War espionage story where the clock keeps running while you decide what to do.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 3,
+      "release": 29,
+      "serial": "860820",
+      "checksum": "2547",
+      "title": "Enchanter",
+      "edition": "Adventure",
+      "summary": "A novice magician must face a dangerous sorcerer, learning spells and using an expanding spellbook to solve magical problems.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 3,
+      "release": 60,
+      "serial": "861002",
+      "checksum": "8427",
+      "title": "The Hitchhiker's Guide to the Galaxy",
+      "edition": "Unreleased final-dev build",
+      "summary": "Join Arthur Dent for an absurd journey through space after an ordinary morning takes a very unfortunate turn.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 3,
+      "release": 37,
+      "serial": "861215",
+      "checksum": "f507",
+      "title": "Hollywood Hijinx",
+      "edition": "Adventure",
+      "summary": "Explore an eccentric movie producer's mansion and its elaborate puzzles while trying to claim a most unusual inheritance.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 3,
+      "release": 1,
+      "serial": "840427",
+      "checksum": "96d8",
+      "title": "Enchanter experiment (Tomas Bok)",
+      "edition": "Modified Enchanter",
+      "summary": "An experimental modification of Enchanter from Tomas Bok's work directory. Its archive filename groups it with Hypochondriac, but it is a different experiment.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 3,
+      "release": 11,
+      "serial": "870225",
+      "checksum": "43e6",
+      "title": "Hypochondriac",
+      "edition": "Unfinished prototype",
+      "summary": "An unfinished personal adventure project by Tomas Bok. This release is Hypochondriac itself; the earlier files grouped with it are experiments based on other games.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 3,
+      "release": 2,
+      "serial": "840505",
+      "checksum": "7540",
+      "title": "Enchanter experiment (Tomas Bok)",
+      "edition": "Modified Enchanter",
+      "summary": "An experimental modification of Enchanter from Tomas Bok's work directory. Its archive filename groups it with Hypochondriac, but it is a different experiment.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 3,
+      "release": 22,
+      "serial": "830916",
+      "checksum": "4122",
+      "title": "Infidel",
+      "edition": "Adventure",
+      "summary": "An abandoned expedition leaves you searching the Egyptian desert for a hidden pyramid and the treasures within.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 6,
+      "release": 83,
+      "serial": "890706",
+      "checksum": "d2b8",
+      "title": "Journey",
+      "edition": "Adventure",
+      "summary": "Guide a party of travellers through a threatened fantasy world, choosing actions and managing the companions' different talents.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 3,
+      "release": 59,
+      "serial": "860730",
+      "checksum": "d070",
+      "title": "Leather Goddesses of Phobos",
+      "edition": "Adventure",
+      "summary": "Escape alien captivity and travel between strange worlds in a comic science-fiction adventure with selectable levels of adult humour.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 3,
+      "release": 203,
+      "serial": "870506",
+      "checksum": "fb9c",
+      "title": "The Lurking Horror",
+      "edition": "Adventure",
+      "summary": "A late-night visit to a university computer room becomes an investigation of disturbing events beneath the campus.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 3,
+      "release": 2,
+      "serial": "871123",
+      "checksum": "3ae9",
+      "title": "Mini-Zork II",
+      "edition": "Abridged prototype",
+      "summary": "A compact return to the underground world of Zork II. This historical build has a reported interpreter failure near the Carousel Room.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 3,
+      "release": 26,
+      "serial": "870730",
+      "checksum": "406d",
+      "title": "Plundered Hearts",
+      "edition": "Adventure",
+      "summary": "Sail into a Caribbean romance of pirates, danger and divided loyalties while searching for your missing father.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 6,
+      "release": 184,
+      "serial": "890412",
+      "checksum": "26c4",
+      "title": "The Restaurant at the End of the Universe",
+      "edition": "Unfinished prototype",
+      "summary": "An incomplete, unreleased follow-up to The Hitchhiker's Guide to the Galaxy. Expect prototype content rather than a complete adventure.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 5,
+      "release": 21,
+      "serial": "871214",
+      "checksum": "79b2",
+      "title": "Sherlock: The Riddle of the Crown Jewels",
+      "edition": "PC edition without sound",
+      "summary": "Assist Sherlock Holmes as Dr Watson in a London investigation involving missing royal jewels and a series of riddles.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 6,
+      "release": 322,
+      "serial": "890706",
+      "checksum": "5c88",
+      "title": "James Clavell's Shogun",
+      "edition": "Adventure",
+      "summary": "Follow an English navigator drawn into the rivalries and unfamiliar customs of feudal Japan in an adaptation of the novel.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 3,
+      "release": 87,
+      "serial": "860904",
+      "checksum": "09dc",
+      "title": "Spellbreaker",
+      "edition": "Adventure",
+      "summary": "Investigate a crisis in magic itself, travelling between unusual places and solving the final challenges of the Enchanter trilogy.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 3,
+      "release": 17,
+      "serial": "821021",
+      "checksum": "e34b",
+      "title": "Starcross",
+      "edition": "Adventure",
+      "summary": "A space prospector encounters an enormous alien vessel. Explore its habitats and learn how its mysterious machinery works.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 3,
+      "release": 107,
+      "serial": "870430",
+      "checksum": "2871",
+      "title": "Stationfall",
+      "edition": "Adventure",
+      "summary": "An apparently routine space-station errand turns dangerous. Reunite with Floyd and investigate what has happened to the crew.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 3,
+      "release": 14,
+      "serial": "841005",
+      "checksum": "d0ec",
+      "title": "Suspect",
+      "edition": "Adventure",
+      "summary": "A costume party becomes a murder investigation, and you are under suspicion. Observe the guests and establish what really happened.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 3,
+      "release": 69,
+      "serial": "850920",
+      "checksum": "00dc",
+      "title": "Wishbringer",
+      "edition": "Adventure",
+      "summary": "A simple postal delivery becomes a rescue mission in a transformed town, with a mysterious stone offering limited magical help.",
+      "source": "https://eblong.com/infocom/"
+    },
+    {
+      "version": 6,
+      "release": 393,
+      "serial": "890714",
+      "checksum": "791c",
+      "title": "Zork Zero: The Revenge of Megaboz",
+      "edition": "Adventure",
+      "summary": "Explore the Great Underground Empire before the original Zork, tackling a jester's challenges and a far-reaching curse.",
+      "source": "https://eblong.com/infocom/"
+    }
+  ]
+}

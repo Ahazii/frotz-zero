@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Frotz Zero
+Comment=Pocket adventures with Frotz and an optional online library
+Exec=/usr/bin/frotz-zero --device
+Icon=share/images/frotz-zero.png
+Terminal=false
+Categories=Game;Emulator;
+StartupNotify=false

@@ -1,0 +1,29 @@
+! SPDX-License-Identifier: CC0-1.0
+! Original, readable physical-speaker check. Uses the shared AIFF fixture.
+Release 1;
+Serial "261120";
+Global callbacks=0;
+[ Finished; callbacks++; rtrue; ];
+[ Pause; rtrue; ];
+[ Main key n;
+  print "FROTZ ZERO SPEAKER CHECK^^";
+  print "P: play three short tones.^Q: finish.^";
+  print "Ctrl+Esc: app menu / mute.^^";
+  print "Press P when ready.^";
+  while(true){
+    @read_char 1 -> key;
+    if(key=='q' or 'Q')quit;
+    if(key=='p' or 'P'){
+      @erase_window -1;
+      print "SPEAKER CHECK^^";
+      callbacks=0;
+      for(n=1:n<=3:n++){
+        print "Tone ",n," of 3.^";
+        @sound_effect 3 2 8 Finished;
+        @read_char 1 10 Pause -> key;
+      }
+      print "^Finished. Callbacks: ",callbacks,".^";
+      print "P repeats. Q exits.^";
+    }
+  }
+];
