@@ -2,7 +2,8 @@
 """Deterministic allowlisted .deb and complete corresponding-source archive.
 Never enumerate private story, local, build or development-data directories.
 """
-import pathlib,subprocess,os,shutil,tempfile,json,hashlib,tarfile,gzip,io
+import pathlib,subprocess,os,shutil,tempfile,json,hashlib,tarfile,gzip,io,re
+from check_public_tree import FORBIDDEN_SUFFIXES
 root=pathlib.Path(__file__).resolve().parents[1]
 meta=json.loads((root/'app-builder.json').read_text());version=meta['version']
 author=meta['store']['author']
@@ -59,6 +60,9 @@ upstream=root/'third_party/frotz'
 if (upstream/'.git').exists():
     tracked=[os.fsdecode(p) for p in subprocess.check_output(['git','-C',str(upstream),'ls-files','-z']).split(b'\0') if p]
 else:tracked=list(json.loads((upstream/'.frotz-zero-source.json').read_text())['files'])
+# Upstream's optional test-game collection contains compiled stories. It is not
+# used to build the interpreter; only our original CC0 test sources are shipped.
+tracked=[p for p in tracked if not p.startswith('src/test/')]
 inputs.extend(upstream/p for p in tracked)
 manifest={'commit':json.loads((root/'dependencies.lock.json').read_text())['frotz']['commit'],'files':{p:hashlib.sha256((upstream/p).read_bytes()).hexdigest() for p in tracked}}
 with source.open('wb') as raw,gzip.GzipFile(filename='',mode='wb',fileobj=raw,mtime=epoch) as compressed,tarfile.open(fileobj=compressed,mode='w') as archive:
@@ -66,6 +70,8 @@ with source.open('wb') as raw,gzip.GzipFile(filename='',mode='wb',fileobj=raw,mt
         if not p.is_file() or '__pycache__' in p.parts or p.suffix=='.pyc':continue
         relative=p.relative_to(root)
         if any(part in ('local','stories','dev-data','.cache','build','dist','.git') for part in relative.parts):raise RuntimeError('Non-public source input: '+str(relative))
+        if p.suffix.lower() in FORBIDDEN_SUFFIXES or re.fullmatch(r'\.z[1-8]',p.suffix.lower()):raise RuntimeError('Story/media/save/archive input: '+str(relative))
+        if p.suffix.lower()=='.inf' and relative.parent!=pathlib.Path('tests/fixtures'):raise RuntimeError('Non-original test story source: '+str(relative))
         info=archive.gettarinfo(str(p),arcname='frotz-zero/'+relative.as_posix());info.uid=info.gid=0;info.uname=info.gname='root';info.mtime=epoch;info.mode=0o644
         with p.open('rb') as f:archive.addfile(info,f)
     body=(json.dumps(manifest,sort_keys=True,indent=2)+'\n').encode()

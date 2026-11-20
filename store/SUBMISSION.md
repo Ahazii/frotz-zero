@@ -16,6 +16,8 @@ The inspected registry revision in `dependencies.lock.json` contained no Frotz Z
 
 The permission declaration enables **network** for optional public HTTPS catalogue/story downloads. The remaining six booleans are false: microphone, camera, IMU, extra hardware, background services and external displays are not used. Normal play remains offline. The desktop development preview is not a claim of external-display support on the device.
 
+The listing explicitly states that the installer contains no playable stories or game media. Original CC0 test/demo sources are provided separately. Built-in Downloads offers [Andrew Plotkin's Infocom catalogue](https://eblong.com/infocom/) and the [IF Archive Z-code collection](https://www.ifarchive.org/indexes/if-archive/games/zcode/); users can also copy their own story files to the library.
+
 Screenshots in `store/screenshots` are exact 320×170 outputs of the real preview renderer, using only original CC0 content. They are desktop evidence; do not label them hardware captures. The 256×256 icon is original artwork, with no baked-in rounded corners or border.
 
 ## Validate without publishing
@@ -39,7 +41,11 @@ Refresh and review the official AppBuilder and registry checkouts first. From **
 
 `publish` uploads and creates a package submission PR; it is not a dry-run command. Complete the local GitHub device-authentication flow without exposing tokens. Attach the approved physical demo video to the resulting PR as requested by maintainers. Publish the corresponding-source archive alongside the binary release. See the [official submission guide](https://github.com/CardputerZero/cardputerzero.github.io/blob/main/docs/en/CP0_submit.md).
 
-## Physical demo script (about 90 seconds)
+## Physical-device demo
+
+The official submission guide requires a video showing the app launching on the physical device, its main features and its exit. It does not state a duration limit; the script below is a coverage guide. Keep the original recording under ignored `local/submission/`, outside Git and release source archives. Attach the video in the submission PR's comments after the PR is created; check GitHub's current attachment size limits before uploading.
+
+The Lantern Room is a tiny original CC0 demonstration story for keyboard input, text display, saving and Continue. The graphics-and-sound demo tests pictures, window layouts and audio. These are development test stories, called fixtures in the scripts, and are installed separately from the app.
 
 Build the CC0 fixtures with `python3 scripts/make_fixtures.py` in WSL. `Test-Device.ps1` stages the Lantern Room and graphics fixtures in the device user's `~/.cache/frotz-zero-tests/fixtures` folder. Before recording, open Frotz Zero normally and change Settings' story folder to that absolute path (for example, `/home/pi/.cache/frotz-zero-tests/fixtures`). This keeps private games out of the filmed library. Restore your usual story folder after recording. Wake the launcher with Tab then Enter if needed.
 

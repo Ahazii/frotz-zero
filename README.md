@@ -16,7 +16,7 @@ The app supports v3–v8 execution, Blorb PNG/JPEG graphics and supported audio,
 
 **Current limits:** automatic Continue supports ordinary untimed v3–v5/v7/v8 line prompts without active audio, interrupts or transcript/replay streams. V6 and timed/character input retain story-provided SAVE/RESTORE. Reader is a plain-text alternative, including non-status upper-window text panels; use the original layout for styles and maps. Frame + Text Zoom preserves the original text layout, so wide lines can need horizontal panning. Automatic uses plain wrapped text, so use Tab or a manual view for original styles, spatial maps and combined layouts. Timed prompts retain their timers and story keys; Fn+L/M pages their text. Pointer mode uses the complete V6 layout. Full commercial-game playability requires separate verification. See [verification evidence](docs/TEST_RESULTS.md).
 
-No commercial stories or media are distributed. The original CC0 test stories and generated media can be rebuilt for demonstrations.
+**Stories are supplied separately.** The installer contains no playable stories or game media. The repository includes original CC0 test/demo source that can be rebuilt and installed separately. The built-in **Downloads** menu offers [Andrew Plotkin's Infocom catalogue](https://eblong.com/infocom/) and the [IF Archive Z-code collection](https://www.ifarchive.org/indexes/if-archive/games/zcode/); you can also copy your own story files onto the device. No commercial stories or media are distributed with Frotz Zero.
 
 ## Start on Windows
 

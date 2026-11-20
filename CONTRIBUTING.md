@@ -8,7 +8,7 @@ Commit application source, scripts, documentation, dependency locks, original ar
 
 Do not commit playable stories, commercial story source, media packs, covers from games, save files, private screenshots/transcripts, story archives, device configuration or credentials. This includes the local `stories` folder and `stories.zip`, and also copies placed elsewhere. Only the original CC0 fixture source files are approved story-source inputs.
 
-`third_party/qrcodegen` is the small reviewed vendored dependency. The upstream Frotz checkout is ignored and fetched at the commit pinned in `dependencies.lock.json`. The corresponding-source release archive includes the complete pinned Frotz source and original notices; Git users fetch it using `scripts/fetch_dependencies.py`.
+`third_party/qrcodegen` is the small reviewed vendored dependency. The upstream Frotz checkout is ignored and fetched at the commit pinned in `dependencies.lock.json`. The corresponding-source release archive includes all interpreter/build sources at that revision and the original notices. Its optional `src/test` game collection is excluded, including compiled stories and third-party story sources. Only our original CC0 test-story sources are distributed. Git users fetch Frotz using `scripts/fetch_dependencies.py`.
 
 ## Before committing and pushing
 

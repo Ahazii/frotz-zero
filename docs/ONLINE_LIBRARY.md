@@ -2,6 +2,8 @@
 
 Open **Downloads** on Home, or press **O** in Library. Choose [Andrew Plotkin's Infocom catalogue](https://eblong.com/infocom/) or the [IF Archive Z-code collection](https://ifarchive.org/indexes/if-archive/games/zcode/). Up/Down selects, Right/Enter opens, Left/Esc goes back, and displayed number shortcuts open actions immediately.
 
+The installer contains no playable stories or game media. Download stories from either collection or copy your own files to the library. The original CC0 test/demo stories used in screenshots are provided as rebuildable source and can be installed separately.
+
 1. Choose **Browse titles** or **Search titles**. First use fetches that source's catalogue; subsequent browsing uses the offline cache.
 2. Choose a title and release/file. The preview shows catalogue notes; **Read all release notes** opens the complete description. Infocom collection releases appear first and carry an asterisk. Higher release numbers do not guarantee a better or finished game.
 3. Choose **Download story**. Checked files enter your configured story folder and the story page opens with **Continue, New, Saves and Delete**. Browsing or downloading does not change Home Continue. A ZIP containing several stories installs the bundle and offers a choice of story.

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Run pinned official policy checks locally; never invokes publish or login."""
-import pathlib,subprocess,tempfile,json,shutil,sys,os,tarfile,io,hashlib
+import pathlib,subprocess,tempfile,json,shutil,sys,os,tarfile,io,hashlib,re
+from check_public_tree import FORBIDDEN_SUFFIXES
 root=pathlib.Path(__file__).resolve().parents[1]
 lock=json.loads((root/'dependencies.lock.json').read_text())
 for key,folder in [('appbuilder','AppBuilder'),('registry_inspected','packages')]:
@@ -32,9 +33,12 @@ tar_bytes=subprocess.check_output(['dpkg-deb','--fsys-tarfile',str(deb)])
 with tarfile.open(fileobj=io.BytesIO(tar_bytes)) as t:
     members=[m for m in t.getmembers() if m.isfile()];names=[m.name.removeprefix('./') for m in members]
     assert all(n.startswith('usr/share/doc/frotz-zero/') or n in ('usr/bin/frotz-zero','usr/share/APPLaunch/applications/frotz-zero.desktop','usr/share/APPLaunch/share/images/frotz-zero.png') for n in names)
-    assert not any(n.endswith(('.z3','.z4','.z5','.z6','.z7','.z8','.qzl','.blb','.blorb','.zblorb')) for n in names)
+    assert not any(pathlib.PurePosixPath(n).suffix.lower() in FORBIDDEN_SUFFIXES or re.fullmatch(r'\.z[1-8]',pathlib.PurePosixPath(n).suffix.lower()) for n in names)
 with tarfile.open(root/'dist'/f"{pkg}_{app['version']}_source.tar.gz") as t:
     names=t.getnames();assert all(not set(pathlib.PurePosixPath(n).parts)&{'local','stories','dev-data','.cache','.git'} for n in names)
+    assert not any(pathlib.PurePosixPath(n).suffix.lower() in FORBIDDEN_SUFFIXES or re.fullmatch(r'\.z[1-8]',pathlib.PurePosixPath(n).suffix.lower()) for n in names)
+    assert not any(n.startswith('frotz-zero/third_party/frotz/src/test/') for n in names)
+    assert all(pathlib.PurePosixPath(n).parent==pathlib.PurePosixPath('frotz-zero/tests/fixtures') for n in names if n.lower().endswith('.inf'))
     assert 'frotz-zero/third_party/frotz/src/common/process.c' in names and 'frotz-zero/third_party/frotz/COPYING' in names
     for name,expected in lock['qrcodegen']['files'].items():
         assert hashlib.sha256(t.extractfile('frotz-zero/third_party/qrcodegen/'+name).read()).hexdigest()==expected

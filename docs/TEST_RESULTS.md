@@ -18,6 +18,12 @@ The final 0.8.1-1 package passes the pinned release and public-content checks. I
 
 **Installation verified on the Zero on 20 November 2026:** after the owner's local sudo deployment, dpkg reports 0.8.1-1 and the application reports 0.8.1. The installed executable and launcher icon match the tested package by SHA-256, `dpkg -V frotz-zero` is clean, all runtime libraries resolve and APPLaunch is active. No game was running during this read-only check. The record is `local/installation-0.8.1.json`; release evidence is in `local/release-0.8.1.json`. The tested package and source archives retain their recorded hashes.
 
+### Pre-publication source audit
+
+The final store preparation found Frotz's optional `src/test` game collection, including compiled Z-code, in the earlier unpublished corresponding-source archives. The application package and public Git repository contained no playable stories. The archive builder now excludes that optional collection, retains every interpreter/build input and upstream notice, and rejects story/media/save/archive inputs. Release validation also rejects compiled stories and test-story source outside the original CC0 fixture directory.
+
+The cleaned 0.8.1-1 source archive rebuilt independently and passed all four CTest suites. The publication bundle retains the exact installed/tested `.deb` and includes eight original CC0 test-story sources, with no playable stories or media packs. Stronger archive checks and the current store policies passed against registry revision `7d64d3121a96b56f68887c4b2ccc9e20658e4ec2`, including name/share-code availability. This is a dated check, not a reservation or store approval. The separate bundle and its hashes are recorded in ignored `local/submission/publication-artifacts.json`; the original development artifacts remain unchanged. Publication is waiting for the owner's physical-device video.
+
 ## Version 0.8.0 Automatic for every supported story
 
 Ahazi reports that Automatic works fantastically well in Arthur on 0.7.0. This update extends that presentation to all supported V3–V8 stories, using the current reading-size preference. The owner chose a one-time migration of existing display preferences; later explicit manual choices remain saved.
